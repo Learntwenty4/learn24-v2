@@ -4,6 +4,9 @@ import FounderMessage from './components/FounderMessage';
 import WhySection from './components/WhySection';
 import TopCourses from './components/TopCourses';
 import HowToBegin from './components/HowToBegin';
+import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 
 export default function Home() {
 
@@ -15,6 +18,9 @@ export default function Home() {
       <WhySection />
       <TopCourses/>
       <HowToBegin />
+      <Testimonials/>
+      <FAQ/>
+      <Footer/>
   
     </main>
   );
