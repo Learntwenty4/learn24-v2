@@ -1,0 +1,111 @@
+export const courses = [
+  {
+    id: 1,
+    slug: "freelancing-basics",
+    title: "Freelancing Basics",
+    instructor: "Priya Sharma",
+    price: "₹1,999",
+    level: "All Levels",
+    category: "Business",
+    videos: 21,
+    hours: "5 Hours",
+    description:
+      "Learn how to start and grow a freelance career with practical client acquisition and pricing strategies.",
+  },
+  {
+    id: 2,
+    slug: "instagram-growth",
+    title: "Instagram Growth",
+    instructor: "Rohit Mehta",
+    price: "₹1,499",
+    level: "Medium",
+    category: "Marketing",
+    videos: 22,
+    hours: "5 Hours",
+    description:
+      "Master content strategy, reels, and audience growth tactics to build a strong Instagram presence.",
+  },
+  {
+    id: 3,
+    slug: "personal-finance",
+    title: "Personal Finance",
+    instructor: "Anjali Rao",
+    price: "₹999",
+    level: "Beginner",
+    category: "Finance",
+    videos: 18,
+    hours: "4 Hours",
+    description:
+      "Build smart money habits with budgeting, saving, and investment fundamentals for beginners.",
+  },
+  {
+    id: 4,
+    slug: "content-writing",
+    title: "Content Writing",
+    instructor: "Kavya Iyer",
+    price: "₹1,299",
+    level: "All Levels",
+    category: "Writing",
+    videos: 20,
+    hours: "5 Hours",
+    description:
+      "Write compelling blogs, copies, and social content that engages readers and drives results.",
+  },
+  {
+    id: 5,
+    slug: "public-speaking",
+    title: "Public Speaking",
+    instructor: "Arjun Das",
+    price: "₹1,799",
+    level: "Medium",
+    category: "Soft Skills",
+    videos: 24,
+    hours: "6 Hours",
+    description:
+      "Overcome stage fear and deliver confident presentations with proven speaking frameworks.",
+  },
+  {
+    id: 6,
+    slug: "web-development",
+    title: "Web Development",
+    instructor: "David Tan",
+    price: "₹2,499",
+    level: "Medium",
+    category: "Technology",
+    videos: 25,
+    hours: "6 Hours",
+    description:
+      "Build responsive websites from scratch using HTML, CSS, JavaScript, and modern best practices.",
+  },
+  {
+    id: 7,
+    slug: "excel-mastery",
+    title: "Excel Mastery",
+    instructor: "Neha Gupta",
+    price: "₹1,599",
+    level: "Beginner",
+    category: "Technology",
+    videos: 30,
+    hours: "8 Hours",
+    description:
+      "Automate reports and analyze data efficiently with formulas, pivot tables, and dashboards.",
+  },
+  {
+    id: 8,
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    instructor: "Karan Malhotra",
+    price: "₹2,199",
+    level: "All Levels",
+    category: "Marketing",
+    videos: 28,
+    hours: "7 Hours",
+    description:
+      "Learn SEO, paid ads, email marketing, and analytics to grow brands online.",
+  },
+];
+
+export const courseCategories = [
+  "All",
+  ...new Set(courses.map((course) => course.category)),
+];
