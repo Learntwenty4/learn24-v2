@@ -1,15 +1,19 @@
 'use client';
+
+import { navLinks, siteConfig } from "@/constants/site";
 import { useState } from 'react';
+import Link from "next/link";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const links = [
-    { name: 'Home', href: '/' },
-    { name: 'Courses', href: '/courses' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-  ];
+  // const links = [
+  //   { name: 'Home', href: '/' },
+  //   { name: 'Courses', href: '/courses' },
+  //   { name: 'About', href: '/about' },
+  //   { name: 'Contact', href: '/contact' },
+  // ];
 
   return (
     <nav className="relative flex items-center justify-between px-6 md:px-10 py-5 border-b border-gray-100 bg-white">
@@ -20,14 +24,14 @@ export default function Navbar() {
 
       {/* Desktop Nav Links */}
       <div className="hidden md:flex items-center gap-10 text-gray-800 font-semibold text-[15px]">
-        {links.map((link) => (
-          <a
+        {navLinks.map((link) => (
+          <Link
             key={link.name}
             href={link.href}
             className="hover:text-[#5B4FE9] transition"
           >
             {link.name}
-          </a>
+          </Link>
         ))}
       </div>
 
@@ -84,15 +88,15 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col px-6 py-5 gap-5">
-          {links.map((link) => (
-            <a
+          {navLinks.map((link) => (
+            <Link
               key={link.name}
               href={link.href}
               className="text-gray-700 font-medium hover:text-[#5B4FE9] hover:font-bold transition-all"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
